@@ -1,0 +1,114 @@
+/**background-image: linear-gradient(to bottom left, #0089CF, #123264)**/
+
+#about h2{
+  opacity: 0; /* Ensure it's hidden initially */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+  transform: scale(0); /* Start from half the size */
+}
+
+#about h2.in-zoom{
+    opacity: 1;
+    animation: zoom-in .5s ease-out forwards;
+}
+
+#about .row .col-md-6:nth-child(2) p {
+  text-align: justify;
+  opacity: 0; /* Ensure it's hidden initially */
+  transform: translateX(100px); /* Start position for the animation */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, 1s forwards; /* Smooth transition */
+}
+#about .row .col-md-6:nth-child(2) p.in-toLeft{
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+#about .row .col-md-6:nth-child(1) .row .col span{
+  opacity: 0; /* Ensure it's hidden initially */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+  transform: scale(0); /* Start from half the size */
+}
+
+#about .row .col-md-6:nth-child(1) .row .col span.in-zoom{
+  opacity: 1;
+  animation: zoom-in .5s ease-out 1.4s forwards;
+}
+
+#about .row .col-md-6:nth-child(1) .fa-code,
+#about .row .col-md-6:nth-child(1) .fa-headphones,
+#about .row .col-md-6:nth-child(1) .fa-mug-hot,
+#about .row .col-md-6:nth-child(1) .fa-clapperboard,
+#about .row .col-md-6:nth-child(1) .fa-gamepad,
+#about .row .col-md-6:nth-child(1) h4{
+  opacity: 0;
+  transform: translateY(20px); /* Start position for the animation */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#about .row .col-md-6:nth-child(1) .row .col:hover{
+  cursor: pointer;
+ transform: scale(1.1);
+ transition: .2s;
+}
+
+/* Apply animation to elements */
+#about .row .col-md-6:nth-child(1) h4.fade-up {
+  animation: fade-up 0.5s ease-in-out forwards;
+}
+
+/* Interest Icons with delayed animations */
+#about .row .col-md-6:nth-child(1) .fa-code.fade-up {
+  animation: fade-up 0.5s ease-in-out .4s forwards;
+}
+
+#about .row .col-md-6:nth-child(1) .fa-headphones.fade-up {
+  animation: fade-up 0.5s ease-in-out .6s forwards;
+}
+
+#about .row .col-md-6:nth-child(1) .fa-mug-hot.fade-up {
+  animation: fade-up 0.5s ease-in-out .8s forwards;
+}
+
+#about .row .col-md-6:nth-child(1) .fa-gamepad.fade-up {
+  animation: fade-up 0.5s ease-in-out 1s forwards;
+}
+
+#about .row .col-md-6:nth-child(1) .fa-clapperboard.fade-up {
+  animation: fade-up 0.5s ease-in-out 1.2s forwards;
+}
+
+
+
+  @keyframes appear{
+    from{
+      opacity: 0;
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+     scale: 1;
+    }
+  }
+
+  
+  @keyframes appearToRight{
+    from{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+/* Keyframes for the appearToLeft effect */
+@keyframes appearToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(60px); /* Start position */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End position */
+  }
+}

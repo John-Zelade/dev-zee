@@ -1,0 +1,56 @@
+.active-dark-mode{
+    background: #343541;
+    transition: background-color 1s ease, color 1s ease; /* Adding color transition */
+    color: #F5F5F5;
+  }
+
+  .active-dark-mode #about{
+    color: #F5F5F5;
+  }
+
+  .active-dark-mode #about .title{
+    color: #F5F5F5;
+  }
+
+  .active-dark-mode #about .col-md-6:nth-child(1) .row .col{
+    background: #373946 !important;
+    background-image: linear-gradient(45deg, #3e4050, #373846);
+    border: 1px solid #404055;
+    box-shadow: 0 0 4px 0 #1a1b27ad !important;
+    border-radius: 5px;
+    color: #F5F5F5;
+  }
+
+  .active-dark-mode #skills li{
+    transition: background-color 1s ease, color 1s ease; /* Adding color transition */
+    background: #373946;
+    background-image: linear-gradient(45deg, #3e4050, #373846);
+    border: 1px solid #404055;
+    box-shadow: 0 0 4px 0 #1a1b27ad !important;
+    color: #F5F5F5;
+  }
+
+
+  .active-dark-mode #skills .wrapper ol .title{
+    background: #252525a2;
+  
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 4px 0 #1a1b27ad;
+    color: #F5F5F5;
+  }
+
+  #skills .fa-html5, 
+  #skills .cloud-api, 
+  #skills .fa-css3, 
+  #skills .fa-js, 
+  #skills .fa-react,
+  #skills .fa-node-js, 
+  #skills .fa-php, 
+  #skills .fa-laravel, 
+  #skills .fa-database,
+  #skills .postman-icon, 
+  #skills .vscode-icon, 
+  #skills .fa-bootstrap{
+    width: 56.28px;
+    height: 56.28px;
+  }
